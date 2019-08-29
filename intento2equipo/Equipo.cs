@@ -18,6 +18,7 @@ namespace intento2equipo
             Entrenador = "no hay entrenador";
             Direccion = "no tiene direccion";
             Nomb = "sin nombre";
+            Jugadores = new List<Jugador>();   //siempre es necesario inicializarla
         }
 
         public Equipo(string entrenador, string direccion,string nomb)
@@ -27,6 +28,14 @@ namespace intento2equipo
             Direccion = direccion;
             Jugadores = new List<Jugador>();
 
+        }
+
+        public Equipo(string nombre) //PARA HACER MAS RAPIDO LA CAPTURA DE LOS JUGADORES  //clase, hecho por el profe =**""$$
+        {
+            Nomb = nombre;
+            Entrenador = "no hay entrenador";
+            Direccion = "no tiene direccion";
+            Jugadores = new List<Jugador>();
         }
     }
 }

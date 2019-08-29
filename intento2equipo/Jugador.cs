@@ -10,18 +10,23 @@ namespace intento2equipo
 
     {
         public string Nombre { get; set; }
-        public string Numero { get; set; }
+        public int Numero { get; set; }
 
         public Jugador()
         {
-            Numero = "sin numero";
+            Numero = 0;
             Nombre = "sin nombre";
         }
 
-        public Jugador(string nombre, string numero)
+        public Jugador(string nombre, int numero)
         {
             Nombre = nombre;
             Numero = numero;
+        }
+
+       public Jugador(string nombre)//PARA HACER MAS RAPIDA LA CAPTURA 
+        {
+          Nombre = nombre;
         }
     }
 }
