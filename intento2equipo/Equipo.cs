@@ -8,6 +8,7 @@ namespace intento2equipo
 {
     class Equipo
     {   public string Nomb { get; set; }
+
         public string Entrenador { get; set; }
         public string Direccion { get; set; }
         public List<Jugador> Jugadores { get; set; }

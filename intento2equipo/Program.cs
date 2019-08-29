@@ -53,6 +53,7 @@ namespace intento2equipo
 
             foreach (Equipo ekipo in equipos)
             {
+
                 Console.WriteLine("nombre del equipo" + ekipo.Nomb);
                 Console.WriteLine("entrenador: " + ekipo.Entrenador);
                 Console.WriteLine("direccion: " + ekipo.Direccion);
