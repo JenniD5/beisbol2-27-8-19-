@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace intento2equipo
 {
     class Equipo
-    {
+    {   public string Nomb { get; set; }
         public string Entrenador { get; set; }
         public string Direccion { get; set; }
         public List<Jugador> Jugadores { get; set; }
@@ -18,8 +18,9 @@ namespace intento2equipo
             Direccion = "no tiene direccion";
         }
 
-        public Equipo(string entrenador, string direccion)
+        public Equipo(string entrenador, string direccion,string nomb)
         {
+            Nomb = nomb;
             Entrenador = entrenador;
             Direccion = direccion;
             Jugadores = new List<Jugador>();

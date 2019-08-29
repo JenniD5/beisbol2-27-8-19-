@@ -11,8 +11,8 @@ namespace intento2equipo
         static void Main(string[] args)
         {
             List<Equipo> equipos = new List<Equipo>();
-            Equipo beisbol1 = new Equipo("juan", "obregon");
-            Equipo beisbol2 = new Equipo("rene", "navojoa");
+            Equipo beisbol1 = new Equipo("juan", "obregon", "xolos");
+            Equipo beisbol2 = new Equipo("rene", "navojoa", "Pepes");
 
             equipos.Add(beisbol1);
             equipos.Add(beisbol2);
@@ -53,6 +53,7 @@ namespace intento2equipo
 
             foreach (Equipo ekipo in equipos)
             {
+                Console.WriteLine("nombre del equipo" + ekipo.Nomb);
                 Console.WriteLine("entrenador: " + ekipo.Entrenador);
                 Console.WriteLine("direccion: " + ekipo.Direccion);
 
