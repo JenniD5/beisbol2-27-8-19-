@@ -17,6 +17,7 @@ namespace intento2equipo
         {
             Entrenador = "no hay entrenador";
             Direccion = "no tiene direccion";
+            Nomb = "sin nombre";
         }
 
         public Equipo(string entrenador, string direccion,string nomb)
